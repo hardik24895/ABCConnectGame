@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/selection_screen_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="@dimen/_20ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBg"
+            android:layout_width="@dimen/_500sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/popup_settings_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:fontFamily="@font/fredoka_one"
+            android:padding="@dimen/_10sdp"
+            android:text="Background Music"
+            android:textColor="@color/setting_txt"
+            android:textSize="@dimen/_25ssp"
+
+            app:layout_constraintStart_toStartOf="@+id/imgBg"
+            app:layout_constraintTop_toBottomOf="@+id/imgClose" />
+
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/switchMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_80sdp"
+            android:textSize="14sp"
+            app:colorBorder="@color/setting_txt"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/imgBg"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            app:on="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/fredoka_one"
+            android:padding="@dimen/_10sdp"
+            android:text="Audio"
+            android:textColor="@color/setting_txt"
+            android:textSize="@dimen/_25ssp"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/switchAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            app:colorBorder="@color/setting_txt"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="@+id/switchMusic"
+            app:layout_constraintTop_toTopOf="@+id/textView2"
+            app:on="true" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/close_blue"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/imgBg"
+            app:layout_constraintHorizontal_bias="0.89"
+            app:layout_constraintStart_toStartOf="@+id/imgBg"
+            app:layout_constraintTop_toTopOf="@+id/imgBg"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

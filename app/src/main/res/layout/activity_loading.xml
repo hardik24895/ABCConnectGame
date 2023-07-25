@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+   android:background="@drawable/splash_bg"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_180sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024"
+        app:srcCompat="@drawable/logo_loading" />
+
+    <TextView
+        android:id="@+id/tvLoading"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fredoka_one"
+        android:text="Loading.."
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+    <com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar
+        android:id="@+id/progress_bar_1"
+        android:layout_marginTop="@dimen/_15sdp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:maxHeight="@dimen/_15sdp"
+        android:minHeight="@dimen/_15sdp"
+        android:progress="40"
+        app:backgroundColor="#5e1e0c"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tvLoading"
+        app:progressColor="#5199db" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

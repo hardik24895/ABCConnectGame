@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ABC Connect</string>
+
+    <string name="banner_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="game_life">game life</string>
+    <string name="level_label">Level:&#160;</string>
+    <string name="score_label">Score:&#160;</string>
+    <string name="play_game">Play game</string>
+    <string name="start_game">Start game</string>
+    <string name="level" translatable="false">0</string>
+    <string name="finish_level">You finished level&#160;</string>
+    <string name="level_start">Start level</string>
+    <string name="game_over">Game over</string>
+    <string name="new_high_score_title">New High Score!</string>
+    <string name="new_high_score_message">Your new high score is:&#160;</string>
+    <string name="assertion_message" translatable="false">Expected 1 param for current level</string>
+</resources>

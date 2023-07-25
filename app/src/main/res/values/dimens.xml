@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="margin_top">@dimen/text_size</dimen>
+    <dimen name="status_text_size">20sp</dimen>
+    <dimen name="heart_size">40dp</dimen>
+    <dimen name="button_size">@dimen/heart_size</dimen>
+    <dimen name="button_size_1">24dp</dimen>
+    <dimen name="instructions_padding">4dp</dimen>
+    <dimen name="text_size">24sp</dimen>
+    <dimen name="text_size_1">30sp</dimen>
+    <dimen name="margin_end">8dp</dimen>
+    <dimen name="margin_end_1">32dp</dimen>
+    <dimen name="width">180dp</dimen>
+    <dimen name="width_1">@dimen/heart_size</dimen>
+    <dimen name="margin_top_1">16dp</dimen>
+    <dimen name="padding">6dp</dimen>
+</resources>
